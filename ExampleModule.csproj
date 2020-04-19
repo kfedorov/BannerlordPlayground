@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-    <Import Project="env.xml"/>
+    <Import Project="env.xml" />
 
     <PropertyGroup>
         <AssemblyVersion>1.0.0</AssemblyVersion>
