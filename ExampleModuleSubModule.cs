@@ -1,5 +1,4 @@
-﻿using TaleWorlds.Core;
-using TaleWorlds.Localization;
+﻿using BannerlordPlayground.Features;
 using TaleWorlds.MountAndBlade;
 
 namespace BannerlordPlayground
@@ -8,17 +7,8 @@ namespace BannerlordPlayground
     {
         protected override void OnSubModuleLoad()
         {
-            InformationMessage message = new InformationMessage("Hello from BannerlordPlayground!");
-
-            InitialStateOption initStateOpt = new InitialStateOption(
-                "BannerlordPlayground",
-                new TextObject("BannerlordPlayground", null),
-                9990,
-                () => InformationManager.DisplayMessage(message),
-                false
-            );
-
-            Module.CurrentModule.AddInitialStateOption(initStateOpt);
+            var helloWorld = new HelloWorld();
+            helloWorld.OnSubModuleLoad();
         }
     }
 }
