@@ -43,8 +43,11 @@ When you build in `Release` configuration the `PostBuild.ps1` script will also p
 
 Remember to bump the version inside the `csproj` file, tag the commit--like this `v1.0.0`--and rebuild.
 
+## Debug 
+If you get an error when running the build commands, this may be due to your script execution policy. See the documentation [here](https://docs.microsoft.com/en-ca/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7#manage-signed-and-unsigned-scripts).
+
 # Legal
 
 MIT © 2020 Konstantin Fedorov
 
-This modification is not created by, affiliated with or sponsored by TaleWorlds Entertainment or its affiliates. The Mount & Blade II Bannerlord API and related logos are intelectual property of TaleWorlds Entertainment. All rights reserved.
+This modification is not created by, affiliated with or sponsored by TaleWorlds Entertainment or its affiliates. The Mount & Blade II Bannerlord API and related logos are intellectual property of TaleWorlds Entertainment. All rights reserved.
